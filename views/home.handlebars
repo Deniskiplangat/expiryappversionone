@@ -1,0 +1,22 @@
+
+<div class="container-fluid">
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">product</th>
+      <th scope="col">expiry</th>
+      <th scope="col">days to expiry</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each rows}}
+    <tr>
+      <td>{{this.product_name}}</td>
+      <td>{{this.expiry_date}}</td> 
+      <td>{{this.days}}</td> 
+      
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
